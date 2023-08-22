@@ -1,5 +1,5 @@
 import React from 'react'
-import blinkers from '../images/clients/blinkers.png'
+import blinkers from '../images/clients/blinkers_logo.png'
 import hashstack from '../images/clients/hashStack.png'
 import ecomomatic from '../images/clients/ecomomatic.png'
 
@@ -27,26 +27,30 @@ const Clients = () => {
 
         <div className='p-16' data-aos='fade-in' data-aos-delay='600'>
           <div className='grid sm:grid-cols-3 lg:grid-cols-3'>
-            <div
-              style={clientImage}
-              className='overflow-hidden flex justify-center transition-all ease-in-out opacity-60 hover:opacity-100 w-1/6'
-            >
-              <img src={blinkers} alt='client' />
-            </div>
-
-            <div
-              style={clientImage}
-              className='overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-60 hover:opacity-100'
-            >
-              <img src={hashstack} alt='client' />
-            </div>
-
-            <div
-              style={clientImage}
-              className='overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-60 hover:opacity-100'
-            >
-              <img src={ecomomatic} alt='client' />
-            </div>
+            <a href='https://blinkersmarketing.com/' target='_blank'>
+              <div
+                style={clientImage}
+                className='overflow-hidden flex justify-center transition-all ease-in-out opacity-60 hover:opacity-100 w-1/6'
+              >
+                <img src={blinkers} alt='client' />
+              </div>
+            </a>
+            <a href='https://hashstackdevelopers.com/' target='_blank'>
+              <div
+                style={clientImage}
+                className='overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-60 hover:opacity-100'
+              >
+                <img src={hashstack} alt='client' />
+              </div>
+            </a>
+            <a href='http://ecomomatic.com/' target='_blank'>
+              <div
+                style={clientImage}
+                className='overflow-hidden p-3 flex justify-center transition-all ease-in-out opacity-60 hover:opacity-100'
+              >
+                <img src={ecomomatic} alt='client' />
+              </div>
+            </a>
           </div>
         </div>
       </section>
