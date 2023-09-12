@@ -6,7 +6,7 @@ const NavLinks = () => {
   return (
     <>
       <Scroll
-        className='px-4 font-extrabold text-black-500 hover:text-blue-500'
+        className='px-4 font-extrabold text-black-500 hover:text-blue-500 cursor-pointer'
         to='about'
         smooth={true}
         duration={1000}
@@ -15,7 +15,7 @@ const NavLinks = () => {
         About
       </Scroll>
       <Scroll
-        className='px-4 font-extrabold text-black-500 hover:text-blue-500'
+        className='px-4 font-extrabold text-black-500 hover:text-blue-500 cursor-pointer'
         to='services'
         smooth={true}
         duration={1000}
@@ -23,15 +23,13 @@ const NavLinks = () => {
       >
         Services
       </Scroll>
-      <Scroll
+      <Link
         className='px-4 font-extrabold text-black-500 hover:text-blue-500'
-        to='portfolio'
-        smooth={true}
-        duration={1000}
-        offset={-130}
+        smooth
+        to='/portfolio'
       >
         Portfolio
-      </Scroll>
+      </Link>
       <Link
         className='px-4 font-extrabold text-black-500 hover:text-blue-500'
         smooth
