@@ -5,7 +5,7 @@ import { getPathname } from "../../utilities/helper";
 
 const NavLinks = () => {
   const { pathname } = window.location;
-  const status = getPathname(pathname)
+  const status = getPathname(pathname);
   return (
     <>
       {status ? (
@@ -53,6 +53,25 @@ const NavLinks = () => {
       >
         Portfolio
       </Link>
+      {status ? (
+        <Link
+          className="px-4 font-extrabold text-black-500 hover:text-blue-500"
+          smooth
+          to="/"
+        >
+          Our Clients
+        </Link>
+      ) : (
+        <Scroll
+          className="px-4 font-extrabold text-black-500 hover:text-blue-500 cursor-pointer"
+          to="client"
+          smooth={true}
+          duration={1000}
+          offset={-140}
+        >
+          Our Clients
+        </Scroll>
+      )}
       <Link
         className="px-4 font-extrabold text-black-500 hover:text-blue-500"
         smooth
